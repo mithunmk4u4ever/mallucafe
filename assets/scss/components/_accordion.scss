@@ -1,0 +1,96 @@
+//=========================== Accodion style start =============================
+
+.custom--accordion {
+    .accordion-item {
+        border: 1px solid transparentize($white, .90);
+        background-color: transparentize($white, .96) !important;
+        border-radius: 3px;
+        &:not(:last-child) {
+            margin-bottom:20px;
+        }
+    }
+    .accordion-body {
+        padding: 20px 20px 40px;
+        position: relative;
+        @media (max-width: 575px) {
+            padding: 10px 10px 20px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 93%;
+            height: 1px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: transparentize($white, .9);
+        }
+        .text {
+            max-width: 60%;
+            @media (max-width: 575px) {
+                max-width: 100%;
+            }
+        }
+    }
+    .accordion-button{
+        background-color: transparent;
+        color: $white;
+        font-size: 20px;
+        padding: 20px;
+        @media (max-width: 575px) {
+            font-size: 18px;
+            padding: 13px;
+            padding-right: 30px;
+        }
+        &::after {
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:not(.collapsed) {
+            color: $base !important;
+            background-color: transparent !important;
+            box-shadow: none;
+            &::after {
+                transform: rotate(0deg);
+                background-image: none;
+            }
+        }
+        &[aria-expanded="true"], &[aria-expanded="false"] {
+            &::after {
+                font-family: "icomoon";
+                font-weight: 400;
+                content: "\e900";
+                display: inline-block;
+                position: relative;
+                margin-left: auto;
+                width: 0 !important;
+                right: 15px;
+                font-size: 15px;
+                color: transparentize($white, .3);
+                @media (max-width: 575px) {
+                    right: -10px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &[aria-expanded="false"] {
+            &::after {
+                content: "\e928";
+            }
+        }
+    }
+    
+}
+
+
+
+// .accordion-button:not(.collapsed)::after {
+//     transform: rotate(0deg);
+// }
+
+// .custom--accordion .accordion-button:not(.collapsed)::after {
+//     background-image: none;
+// }
+

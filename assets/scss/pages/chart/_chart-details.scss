@@ -1,0 +1,85 @@
+// Single Top Image
+.chart-single {
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+//  Chart Single Content
+.chart-content-wrapper {
+    margin-top: 60px;
+    @media (max-width: 991px) {
+        margin-top: 50px;
+    }
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
+}
+.chart-single-content {
+    &__desc {
+        margin-bottom: 25px;
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+    }
+    &__thumb {
+        margin-top: 25px;
+        margin-top: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// Chart Single List
+.address-text-list {
+    margin: -20px 0;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: $white;
+        font-size: 18px;
+        padding: 20px 0;
+        position: relative;
+        @media (max-width: 991px) {
+            font-size: 16px;
+            padding: 10px 0;
+        }
+        &::before {
+            position: absolute;
+            content: ":";
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &-textone {
+            // width: 70%;
+            width: calc(100% - 35%);
+            font-family: $body-font;
+            @media (max-width: 575px) {
+                width: calc(100% - 40%);
+            }
+        }
+        &-texttwo {
+            font-family: $body-font;
+            width: 35%;
+            @media (max-width: 575px) {
+                width: 40%;
+            }
+        }
+    }
+}
+
+

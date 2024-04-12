@@ -1,0 +1,51 @@
+
+.blog-item {
+    &:hover .blog-item__thumb img {
+        transform: scale(1.2);
+    }
+    &__thumb {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        &-link {
+            display: block;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s linear;
+        }
+    }
+    &__content {
+        margin-top: 30px;
+    }
+    &__title {
+        margin-top: 15px;
+        text-transform: uppercase;
+        &-link {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            color: $white;
+        }
+        
+    }
+}
+
+// Tima & Date
+.blog-item__timedate {
+    background-color: $base-two;
+    position: absolute;
+    bottom: 0;
+    padding: 12px 20px;
+    border-radius: 10px 10px 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    @media (max-width: 1299px) {
+        width: 90%;
+    }
+}

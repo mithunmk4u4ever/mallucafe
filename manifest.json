@@ -1,0 +1,22 @@
+
+
+{
+    "name": "Mallu cafe radio fm",
+    "short_name": "Mallu cafe app",
+    "start_url": ".",
+    "background_color": "white",
+    "theme_color": "#009578",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/logo64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

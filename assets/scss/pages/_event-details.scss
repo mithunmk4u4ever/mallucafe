@@ -1,0 +1,38 @@
+.event-content-wrapper {
+    margin-top: 45px;
+    @media (max-width: 991px) {
+        margin-top: 35px;
+    }
+}
+
+.event-single {
+    &__thumb {
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        margin-top: 40px;
+        @media (max-width: 991px) {
+            margin-top: 30px;
+        }
+    }
+}
+// Map
+.event-single-map {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: 767px) {
+        min-height: 350px;
+    }
+    &__iframe {
+        width: 100%;
+    }
+}

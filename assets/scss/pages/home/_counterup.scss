@@ -1,0 +1,100 @@
+.team-and-counter  {
+    position: relative;
+}
+.counterup-item {   
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 55px;
+        left: 85%;
+        top: 50%;
+        background-color: transparentize($white, .8);
+        transform: translatey(-50%) rotate(45deg);
+        @media (max-width: 1399px) {
+            left: 90%;
+        }
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+    &__icon {
+        width: 100px;
+        height: 100px;
+        background-color: $base;
+        border: 5px solid darken($white, 80%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: $white;
+        @media (max-width: 1199px) {
+            width: 80px;
+            height: 80px;
+        }
+        @media (max-width: 991px) {
+            width: 70px;
+            height: 70px;
+            font-size: 25px;
+        }
+        @media (max-width: 767px) {
+            width: 65px;
+            height: 65px;
+        }
+    }
+    &__content {
+        width: calc(100% - 100px);
+        padding-left: 20px;
+    }
+    &__text {
+        font-size: 40px;
+        margin-bottom: 0;
+        font-weight: 600;
+        line-height: 1.1;
+        @media (max-width: 991px) {
+            font-size: 30px;
+        }
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+        @media (max-width: 575px) {
+            font-size: 20px;
+        }
+        .odometer {
+            font-size: 70px;
+            @media (max-width: 1199px) {
+                font-size: 60px;
+            }
+            @media (max-width: 991px) {
+                font-size: 50px;
+            }
+            @media (max-width: 767px) {
+                font-size: 40px;
+            }
+            @media (max-width: 575px) {
+                font-size: 30px;
+            }
+        }
+    }
+    &__desc {
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+
+.counter-item-wrapper {
+    div[class*="col"] {
+        &:last-child {
+            .counterup-item {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}

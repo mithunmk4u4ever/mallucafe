@@ -1,0 +1,60 @@
+
+body,
+h1 {
+  font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+  height: 100%
+}
+
+.bgimg {
+  background-image: url('assets/images/homegf.gif');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+}
+
+h1,
+p,
+a {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  .w3-jumbo {
+    font-size: 22px;
+  }
+  .bgimg {
+  background-image: url('assets/images/homemob.gif');
+  }
+  .logo {
+  width: 70px;
+  height: 60px;
+  }
+}
+
+.button {
+
+  margin-top:500px;
+  border-radius: 34px;
+  border: 1px solid #48d3a9;
+  background: #e58e14a3;
+  box-shadow: 0 4px 4px #00000040;
+  backdrop-filter: blur(2px);
+  color: #fff;
+  font-family: Gideon Roman, serif;
+  padding: 0.05rem 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: clamp(.7rem, .9rem + .4vw, 3.2rem);
+  width: 100%;
+}

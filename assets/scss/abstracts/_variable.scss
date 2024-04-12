@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap');
+// ================ Css Variables Start ========================
+:root {
+  --heading-one: clamp(2rem, 4vw + 1rem, 5.625rem); //Min:24px - Max:90px
+  --heading-two: clamp(1.375rem, 1.5vw + 1rem, 2.5rem); //Min: 22px - Max: 40px
+  --heading-three: clamp(1.25rem, 1.3vw + 1rem, 1.875rem); //Min: 20px - Max: 30px
+  --heading-four: clamp(1.125rem, 1.3vw + 1rem, 1.5rem); //in: 18px - Max: 24px
+  --heading-five: clamp(1.0625rem, 1vw + 1rem, 1.25rem); //in: 17px - Max: 20px
+  --heading-six: clamp(1rem, 1.1vw + 1rem, 1.125rem);
+}
+
+// ====================== Font Family =================================
+  $heading-font: 'Teko', sans-serif;
+  $body-font: 'Roboto', sans-serif;
+
+// =============================== Common Colors ======================
+  $primary: #007bff;
+  $secondary:#adb5bd;
+  $success: 	#17d605;
+  $danger: #f75959;
+  $warning: #ff9e42;
+  $info: #17a2b8;
+
+  // =============================== Site Colors ======================
+  $base: #1b873f;
+  $base-two: #ed1c24; 
+  $heading-color: #fff;
+  $body-color: #cccccc;
+  $body-background:#bf1e2e ;
+
+  $white: #f9f9f9;
+  $light: #b9babb;
+  $black: #181d20; 
+  $dark: #22272b;
+  $dark-medium: #2d3237;
+  $dark-light: #303336;
+
+// ================= Box Shadow ================
+  $header-box-shadow: 0px 2px 5px 0px #99999936;
+  $mobile-box-shadow: 0px -1px 5px 0px #99999936;
+  $box-shadow: 0px 1px 4px 1px #dddddd4a;
+
+  // ============================= border Color====================
+  $border-color:  #c9c3c36b;
+  $border-color-light: #e3dddd6b;
+  $border-base: var(--base); 
+

@@ -1,0 +1,42 @@
+
+
+.error {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__bottom-thumb {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.error-content {
+    &__error {
+        font-size: 200px;
+        font-weight: 600;
+        color: $base;
+        line-height: 1.1;
+        font-family: $body-font;
+       @media (max-width: 1199px) {
+        font-size: 180px;
+       }
+       @media (max-width: 991px) {
+        font-size: 150px;
+       }
+       @media (max-width: 767px) {
+        font-size: 120px;
+       }
+       @media (max-width: 575px) {
+        font-size: 80px;
+       }
+    }
+    &__title {
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}

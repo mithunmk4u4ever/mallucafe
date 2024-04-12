@@ -1,0 +1,109 @@
+// Play Button
+.fraudio-container {
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+    font-size: 18px;
+    background-color: lighten($base-two, 2%);
+    border-radius: 10px; 
+    overflow: hidden;
+    margin: 0;
+    .fraudio-play {
+        background-color: $base;
+        border-radius: 50%;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 10px;
+        @media (max-width: 991px) { 
+            width: 50px;
+            height: 50px;
+        }
+        @media (max-width: 767px) { 
+            width: 40px;
+            height: 40px;
+        }
+        svg {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            width: auto;
+            height: 100%;
+            border: 2px solid $base;
+            path {
+                fill: $white;
+            }
+        }        
+    }
+    .fraudio-progress {
+        position: absolute;
+        bottom: 0;
+        border-right: 1px solid transparentize($white, .9);
+        background-color: transparentize($base, .2);
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+// Chart Circle Play
+.circle-audio-container {
+    background-color: transparent;
+    .fraudio-progress {
+        display: none;
+    }
+    .fraudio-play {
+        background-color: $white;
+        svg {
+            border: 1px solid darken($base-two, 3%);
+            path {
+                fill: lighten($base-two, 7%);
+            }
+        } 
+    }
+}
+
+// Circle Center Position 
+.center-position-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    .fraudio-play {
+        background-color: $base;
+        svg {
+            border: 2px solid $base;
+            path {
+                fill: $white;
+            }
+        }        
+    }
+}
+
+// =============== Chart Audio Position Bottom ==============
+.chart-audio-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+}
+
+// =============== Chart Single Position Bottom ==============
+.chart-single-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: $base;
+   .fraudio-progress {
+        background-color: transparentize($base-two, .1);
+    }
+}

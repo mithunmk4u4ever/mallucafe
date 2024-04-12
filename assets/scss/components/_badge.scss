@@ -1,0 +1,47 @@
+// Custom Badge
+.badge{
+    border-radius:30px;
+    padding: 4px 15px;
+    font-size: 11px;
+    font-weight: 500;
+    &--base {
+        background-color: $base;
+        border: 1px solid $base;
+        color: $white;
+    }
+    &--primary {
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: $white;
+    }
+    &--base {
+        background-color: $base;
+        border: 1px solid $base;
+        color: $white;
+    }
+    &--secondary {
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        color: $white;
+    }
+    &--success {
+        background-color: $success;
+        border: 1px solid $success;
+        color: $white;
+    }
+    &--danger {
+        background-color: $danger;
+        border: 1px solid $danger;
+        color: $white;
+    }
+    &--warning {
+        background-color: $warning;
+        border: 1px solid $warning;
+        color: $white;
+    }
+    &--info {
+        background-color: $info;
+        border: 1px solid $info;
+        color: $white;
+    }
+}

@@ -1,0 +1,60 @@
+// ================================ Accordion Css Start ==========================
+.accordion-right {
+    position: relative;
+    z-index: 99;
+    text-align: right;
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    z-index: 1;
+    border-radius: 10px;
+    &__thumb {
+        position: relative;
+        @media (max-width: 1199px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom:30px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: -70px;
+            bottom: -70px;
+            background-color: transparent;
+            border: 2px solid $base;
+            z-index: -99;
+            border-radius: 10px;
+            @media (max-width: 1199px) {
+                left: -50px;
+                bottom: -50px;
+            }
+            @media (max-width: 991px) {
+                left: -40px;
+                bottom: -40px;
+            }
+            @media (max-width: 767px) {
+                left: -30px;
+                bottom: -30px;
+            }
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border: 40px solid $base-two;
+        @media (max-width: 991px) {
+            border: 30px solid $base-two;
+        }
+        @media (max-width: 767px) {
+            border: 20px solid $base-two;
+        }
+    }
+}
+
+// ================================ Accordion Css End ==========================

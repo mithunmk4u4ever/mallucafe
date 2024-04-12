@@ -1,0 +1,154 @@
+
+.team {
+    position: relative;
+}
+.team-bottom-thumb {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.team-item-wrapper {
+    div[class*="col"] {
+        &:nth-of-type(3n+2) {
+            .team-item__thumb img{
+                height: 90%;
+            }
+        }
+    }
+}
+// ======================================== Radio Jockey Card Item ======================
+.radio-jockey-wrapper {
+    div[class*="col"] {
+        &:nth-of-type(3n+2) {
+            .team-item {
+                &__thumb img {
+                    height: 90%;
+                }
+                &__socails {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// ================= Team Item One Style =============================
+.team-item {
+    position: relative;
+    height: 100%;
+    &:nth-of-type(3n+2) {
+        height: 50%;
+    }
+    &__thumb {
+        position: relative;
+        border-radius: 5px;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        margin-bottom: 0;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: lighten($base-two, 4%);
+        background-color: $base-two;
+        width: 80%;
+        padding: 25px 5px;
+        z-index: 1;
+        &-link {
+            color: $white;
+        }
+        @media (max-width: 767px) {
+            padding: 12px 5px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 60px;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            background-color: transparentize($white, .95);
+            z-index: -1;
+            border-radius: 50%;
+        }
+        &-colored {
+            color: $base;
+            display: block;
+            font-family: $body-font;
+        }
+    } 
+   &__socails {
+        position: absolute;
+        right: 0;
+        bottom: -14%;
+        background-color: $base;
+        padding: 35px 10px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 767px) {
+            padding: 25px 10px;
+        }
+    }
+}
+// ================= Team Two Item Style ==========================
+.team-two {
+    &__rj {
+        position: absolute;
+        bottom: 0;
+        font-size: 150px;
+        margin-bottom: 0;
+        line-height: .6;
+        font-family: $body-font;
+        color: $base-two;
+    }
+    &__thumb {
+        position: relative;
+        max-height: 410px;
+        overflow: hidden;
+        border-radius: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+    &__content {
+        padding-left: 80px;
+        margin-top: 40px;
+    }
+    &__title {
+        margin-bottom: 0px;
+        position: relative;
+        &-link {
+            color: $white;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 1px;
+            left: -80px;
+            top: 50%;
+            background-color: $base;
+            transform: translateY(-50%);
+        }
+    }
+    &__designation {
+        font-family: $body-font;
+        color: $white;
+        font-size: 18px;
+    }
+}

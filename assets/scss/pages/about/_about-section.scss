@@ -1,0 +1,95 @@
+// About Left
+.about-left {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    &__thumbs {
+        width: calc(100% - 40%);
+        max-height: 490px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            &:nth-child(2) {
+                position: absolute;
+                max-width: 75%;
+                height: auto;
+                right: 0;
+                top: 0;
+                border-left: 40px solid $base-two;
+                border-bottom: 40px solid $base-two;
+                border-radius: 0 0 0 10px;
+                @media (max-width: 991px) {
+                    border-left: 20px solid $base-two;
+                    border-bottom: 20px solid $base-two;
+                }
+            }
+        }
+    }
+}
+
+.about-24 {
+    width: 40%;
+    &__text {
+        background-color: $base;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 0;
+        border-left: 40px solid $base-two;
+        text-align: center;
+        align-self: flex-end;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 92px;
+        font-weight: 600;
+        color: $white;
+        @media (max-width: 1199px) {
+            font-size: 70px;
+        }
+        @media (max-width: 991px) {
+            border-left: 20px solid $base-two;
+            font-size: 60px;
+        }
+        @media (max-width: 575px) {
+            font-size: 50px;
+        }
+        @media (max-width: 400px) {
+            font-size: 30px;
+        }
+    }
+}
+
+// Right Info
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__thumb {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__details {
+        width: calc(100% - 80px);
+        padding-left: 20px;
+    }
+    &__name {
+        margin-bottom: 0px;
+    }
+    &__designation {
+        font-family: $body-font;
+        color: $base;
+        font-weight: 400;
+    }
+}

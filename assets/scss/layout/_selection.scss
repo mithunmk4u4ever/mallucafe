@@ -1,0 +1,29 @@
+::selection {
+    color: darken($white, 10%);
+    background: darken($base, 3%);
+  }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: darken($base, 5%);
+    border: 0px solid transparent;
+    border-radius: 10px;
+    // &:hover {
+    //     background-color: #08f55b;
+    // }
+    // &:active {
+    //     background-color: #08f55b;
+    // }
+}
+::-webkit-scrollbar-track {
+    // background-color: $base-two;
+    // &:active {
+    //     background-color: #1673dd;
+    // }
+}

@@ -1,0 +1,82 @@
+
+// ====================== Breadcumb Css Start ====================
+.breadcumb {
+    position: relative;
+    z-index: 1;
+    padding: 170px 0 85px;
+    @media (max-width: 991px) {
+        padding: 125px 0 60px;
+    }
+    @media (max-width: 767px) {
+        padding: 105px 0 40px;
+    }
+    &::before {
+        background-color: lighten($base-two, 2%) !important;
+    }
+    &__bottom-thumb {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    &__wrapper {
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 10px;
+        color: $base;
+        text-transform: uppercase;
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 1.2;
+        @media (max-width: 1199px) {
+            font-size: 70px;
+        }
+        @media (max-width: 991px) {
+            font-size: 50px;
+        }
+        @media (max-width: 767px) {
+            font-size: 40px;
+        }
+        @media (max-width: 575px) {
+            font-size: 35px;
+        }
+        &-lighten {
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            letter-spacing: 3px;
+            -webkit-text-stroke-color: $white;
+            @media (max-width: 991px) {
+                -webkit-text-stroke-width: .5px;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item{
+        color: $white;
+        padding: 0 5px;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+            @media (max-width: 575px) {
+                font-size: 15px;
+            }
+        &-text {
+            color: $base;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+    &__link {
+        color: $white; 
+        font-weight: 500;
+        &:hover {
+            color: $base;
+        }
+    }
+}
+// ====================== Breadcumb Css End ====================

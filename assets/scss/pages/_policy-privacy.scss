@@ -1,0 +1,105 @@
+// Left Css
+.policy-left {
+    position: sticky;
+    top: 100px;
+    &__wrapper {
+        background-color: transparentize($white, .95);
+        padding: 45px 20px !important;
+        border-radius: 5px;
+        @media (max-width: 991px) {
+           padding: 30px 10px !important;
+        }
+        @media (max-width: 757px) {
+           padding: 35px 15px !important;
+        }
+    }
+    .nav-link {
+        padding: 0px ;
+        margin: 5px 0;
+        &:hover {
+            color: $base;
+        }
+    }
+    &__list {
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 10px !important;
+        &.active {
+            background-color: transparent !important;
+            color: $base !important;
+            &::before {
+                background-color: $base;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 3px;
+            height: 70%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $light;
+        }
+    }
+    &__item {
+        color: $body-color;
+        span {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+        &.active {
+            color: $base !important;
+            background-color: transparent !important;
+        }
+    }
+}
+
+// Right Css
+.policy-right {
+    &__list {
+        margin-top: 30px;
+        @media (max-width: 757px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.policy-card {
+    background-color: transparentize($white, .95);
+    padding: 25px;
+    border-radius: 5px;
+    @media (max-width: 991px) {
+        padding: 20px;
+    }
+    @media (max-width: 767px) {
+        padding: 15px;
+    }
+    &:not(:last-child) {
+        margin-bottom: 50px;
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 575px) {
+            margin-bottom: 30px;
+        }
+    }
+  
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__desc {
+        margin-bottom: 30px;
+        @media (max-width: 757px) {
+            margin-bottom: 20px;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

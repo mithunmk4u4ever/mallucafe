@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mallu Cafe Radio </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon1.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Fraudio -->
+    <link rel="stylesheet" href="assets/css/fraudio.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .text-list.style-category .text-list__link,.address-text-list__item  {
+  color: #000;}
+      .breadcumb__title {
+      
+      color: #ffffff;
+  }
+  .navbar-toggler.header-button {
+    color:black;
+}
+  .latest-blog__title-link {
+  color: #000;
+}
+.footer-item__logo a img {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+  h1,h4,h3,p{
+      color:black;
+  }
+  .team-item__title {
+      background-color:white ;
+  }
+  .about-left__thumbs img:nth-child(2) {
+    
+      border-left: 40px solid #ffffff;
+      border-bottom: 40px solid #ffffff;
+  }
+  .team-item__title , .team-item__title  {
+      color:#f26a27;
+  }
+  .team-item__socails{
+      background-color: #ffff;
+  }
+  .accordion-right img {
+     
+      border: 40px solid #f26a27;
+  }
+  .about-24__text {
+     
+      border-left: 40px solid #ffffff; }
+  .breadcumb__item-text {
+      color: #ffffff;}
+       body,.bg-overlay-one::before {
+      background-color: #ffff;
+     }
+     .header-bottom {
+      background-color: #ffffff;
+     }
+     .breadcumb::before {
+      background-color: #bf1e2e !important;
+  }
+      .nav-menu .nav-item .nav-link {
+      font-weight: 500;
+      font-size: 16px;
+      color: #030303 !important;}
+      .nav-menu .nav-item .nav-link:hover{
+          color:#1b873f;
+      }
+      .banner-two-right__play-img {
+          border-color:#f26a27;
+      }
+      .banner-content__title-colored{
+          color:#f26a27;
+      }
+      .section-heading__title-colored {
+      color: #f26a27;}
+      .section-heading__title,.banner-content__title{
+          color:#1b873f;
+      }
+      .banner-content__desc, .section-heading__desc{
+          color:black;
+      }
+      .banner-content__title-water {
+      
+      -webkit-text-stroke-color: #f26a27;
+      }
+      .btn--base.outline {
+      background-color: #229242;
+      }
+      .btn--base.style-two:hover{
+      background-color: #229242;
+      }
+      .custom--tab .nav-item .nav-link {
+  color: #ffffff;
+}
+      .live-youtube {
+          background-color: #ffff;
+      }
+      .youtube-content__subtitle, .youtube-time__time  {
+          color:#bf1e2e;
+      }
+      .live-youtube.fraudio-container {
+          background-color: antiquewhite;
+      }
+      .youtube-rj__title {
+          background-color: #229242;
+      }
+      .tab-card{
+          background-color:#f26a27;
+          color: white;
+      }
+      .rj-img-list__item{
+      
+         border-color: #ffff;
+      }
+      .blog-item__timedate {
+          background-color: #f26a27;
+      }
+      .icon-{
+          color: #f26a27;
+      }
+      .circle-audio-container .fraudio-play svg path {
+      fill:#f26a27;
+  }
+  .event-item-two__plus::before {
+      background-color: #229242;
+  }
+  .event-item-two__plus::after{
+      background-color: #f26a27;
+  } 
+  .event-date-list__item{
+      color:black;
+  }
+  .blog-item__title-link {
+      color:black;
+  }
+  .header-bottom.fixed-header {
+      background-color: #f26a27;
+  }
+  .footer-area {
+      background-color: #f26a27;
+      color: white;
+  }
+  .footer-area p{
+      color:white;
+  }
+  .footer-menu__link {
+      color: #ffff;
+      }
+      .footer-menu__link {
+      color: #ffff;
+      }
+      .nav-item__icon-microphone{
+          color:#229242;
+      }
+      .team-two__rj {color:white;
+    }
+    .pagination .page-item .page-link {
+        color:rgb(206, 202, 202);
+    }
+    .btn--base.header__style-two:hover {
+    background-color: #229242;
+    }
+    .preloader1{
+  position: fixed;
+  z-index: 999999;
+  background-color:#fff;
+  width: 100%;
+  height: 100%;
+}
+.loader-p1{
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader-p1:before, .loader-p1:after{
+  content: '';
+  background-image: url('assets/images/logo/logos.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader-p1:before{
+  animation-delay: 0.5s;
+}
+
+
+@keyframes loader{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+ }
+  </style>
+</head>
+<body>
+    
+<!--==================== Preloader Start ====================-->
+<div class="preloader1">
+    <div class="loader-p1"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+<!-- ==================== Bottom Header End Here ==================== -->
+<header class="header-bottom" id="header">
+    <div class="container-fluid header-bottom__style-two">
+        <nav class="navbar navbar-header__style-two navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo" href="home"><img src="assets/images/logo/logos.png" alt=""></a>
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+            
+           
+
+            <div class="toggle-search-box d-lg-none d-block">
+                <div class="search-icon">
+                    <span class="icon-search"></span>
+                </div>
+                <div class="search-input">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-menu style-two">
+                    <li class="nav-item ">
+                        <a class="nav-link style-two" href="home" > Home <span class="nav-item__icon"></span> <span class="nav-item__icon-microphone"><span class="icon-mic-1"></span></span> </a>
+                        
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link style-two" href="about">About <span class="nav-item__icon-microphone"><span class="icon-mic-1"></span></span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link style-two" href="show" > Shows <span class="nav-item__icon"></span> <span class="nav-item__icon-microphone"><span class="icon-mic-1"></span></span> </a>
+                       
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link style-two" href="event" > Event <span class="nav-item__icon"></span> <span class="nav-item__icon-microphone"><span class="icon-mic-1"></span></span> </a>
+                      
+                    </li> 
+                  
+                    <li class="nav-item ">
+                        <a class="nav-link style-two" aria-current="page"  href="blog" > Blog <span class="nav-item__icon"></span> <span class="nav-item__icon-microphone"><span class="icon-mic-1"></span></span> </a>
+                       
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link style-two"    href="contact">Contact <span class="nav-item__icon-microphone"><span class="icon-mic-1"></span></span> </a>
+                    </li>
+                    <!-- <li class="nav-item d-lg-none d-block">
+                        <div class="signup-button">
+                            <a href="registration.html" class="btn--base w-100 bg--base">Sign Up Your Account</a>
+                         </div>
+                    </li> -->
+                    <!-- <li class="nav-item d-lg-block d-none">
+                        <div class="nav-link style-two search-box__style-two">
+                            <div class="toggle-search-box">
+                                <div class="search-icon">
+                                    <span class="icon-search"></span>
+                                </div>
+                                <div class="search-input">
+                                    <form>
+                                        <input type="text" placeholder="Search...">
+                                        <button type="submit"><span class="icon-search"></span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ==================== Bottom Header End Here ==================== -->
+
+<!-- ============================ Breacumb Start ========================-->
+<div class="breadcumb bg-overlay-one">
+    <div class="breadcumb__bottom-thumb">
+        <img src="assets/images/thumb/banner-bid.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="breadcumb__wrapper">
+                    <span class="breadcumb__title">Our <span class="breadcumb__title-lighten">Blog</span></span>
+                    <ul class="breadcumb__list">
+                        <li class="breadcumb__item"><a href="home" class="breadcumb__link"> <i class="las la-home"></i>  Home</a> </li>
+                        <li class="breadcumb__item"> //</li>
+                        <li class="breadcumb__item-text">Blog </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================ Breacumb End ========================-->
+
+<!-- ==================== Blog Post Single Start Here ==================== -->
+<section class="blog-single py-120">
+    <div class="container">
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F457367199949075%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+     <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F749485073953895%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+     <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F413011667980704%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F741190381326839%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+     <p></p>
+     <br>   <div class="row gy-5">
+            <div class="col-lg-8 pe-lg-5">
+                <div class="blog-post-item">
+                
+                    <div class="blog-post-item__meta">
+                        <ul class="meta-tag-list">
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link active"> <span class="meta-tag-list__link-bigtext">28</span> <span class="meta-tag-list__link-smalltext">Jun</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-love-6"></span></span> <span class="meta-tag-list__link-number">2,457</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-chat"></span></span> <span class="meta-tag-list__link-number">1,273</span> </a></li>
+                        </ul>
+                    </div>
+                    <div class="blog-post-item__details">
+                        <div class="blog-post-item__thumb">
+                            <a class="blog-post-item__thumb-link" href=""><img src="assets/images/blog1.jpg" alt=""></a>
+                        </div>
+                        <div class="blog-post-item__content">
+                            <h3 class="blog-post-item__title"> <a href="" class="blog-post-item__title-link"> </a></h3>
+                            <p class="blog-post-item__desc"></p>
+                            <a href="" class="btn--blog">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post-item">
+                    <div class="blog-post-item__meta">
+                        <ul class="meta-tag-list">
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link active"> <span class="meta-tag-list__link-bigtext">28</span> <span class="meta-tag-list__link-smalltext">Jun</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-love-6"></span></span> <span class="meta-tag-list__link-number">2,457</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-chat"></span></span> <span class="meta-tag-list__link-number">1,273</span> </a></li>
+                        </ul>
+                    </div>
+                    <div class="blog-post-item__details">
+                        <div class="blog-post-item__thumb">
+                            <a class="blog-post-item__thumb-link" href=""><img src="assets/images/blog2.jpg" alt=""></a>
+                        </div>
+                        <div class="blog-post-item__content">
+                            <h3 class="blog-post-item__title"> <a href="" class="blog-post-item__title-link"> </a></h3>
+                            <p class="blog-post-item__desc"> </p>
+                            <a href="" class="btn--blog">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post-item">
+                    <div class="blog-post-item__meta">
+                        <ul class="meta-tag-list">
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link active"> <span class="meta-tag-list__link-bigtext">28</span> <span class="meta-tag-list__link-smalltext">Jun</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-love-6"></span></span> <span class="meta-tag-list__link-number">2,457</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-chat"></span></span> <span class="meta-tag-list__link-number">1,273</span> </a></li>
+                        </ul>
+                    </div>
+                    <div class="blog-post-item__details">
+                        <div class="blog-post-item__thumb">
+                            <a class="blog-post-item__thumb-link" href=""><img src="assets/images/blog3.jpg" alt=""></a>
+                        </div>
+                        <div class="blog-post-item__content">
+                            <h3 class="blog-post-item__title"> <a href="" class="blog-post-item__title-link"> </a></h3>
+                            <p class="blog-post-item__desc"></p>
+                            <a href="" class="btn--blog">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post-item">
+                    <div class="blog-post-item__meta">
+                        <ul class="meta-tag-list">
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link active"> <span class="meta-tag-list__link-bigtext">28</span> <span class="meta-tag-list__link-smalltext">Jun</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-love-6"></span></span> <span class="meta-tag-list__link-number">2,457</span> </a></li>
+                            <li class="meta-tag-list__item"><a href="javascript:void(0)" class="meta-tag-list__link"> <span class="meta-tag-list__link-icon"><span class="icon-chat"></span></span> <span class="meta-tag-list__link-number">1,273</span> </a></li>
+                        </ul>
+                    </div>
+                    <div class="blog-post-item__details">
+                        <div class="blog-post-item__thumb">
+                            <a class="blog-post-item__thumb-link" href=""><img src="assets/images/blog4.jpg" alt=""></a>
+                        </div>
+                        <div class="blog-post-item__content">
+                            <h3 class="blog-post-item__title"> <a href="" class="blog-post-item__title-link"></a></h3>
+                            <p class="blog-post-item__desc"></p>
+                            <a href="" class="btn--blog">Read more</a>
+                        </div>
+                        <nav aria-label="Page navigation example" class="mt-5">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar-wrapper">
+                    <div class="row gy-lg-5 gy-4">
+                        <div class="col-sm-12">
+                            <div class="sidebar">
+                                <div class="sidebar__heading">
+                                    <h4 class="sidebar__title">Top Category</h4> 
+                                    <span class="sidebar__title-one"></span> <span class="sidebar__title-two"></span>
+                                </div>
+                                <ul class="text-list style-category">
+                                    <li class="text-list__item"><a class="text-list__link" href="">Music</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="">Alternative Music</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="">Electronic Music</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="">How To Make One</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="">Easy Listening</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="">Classical Music</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="">Examples</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="sidebar">
+                                <div class="sidebar__heading">
+                                    <h4 class="sidebar__title">upcoming event</h4> 
+                                    <span class="sidebar__title-one"></span> <span class="sidebar__title-two"></span>
+                                </div>
+                                <ul class="latest-blog-list">
+                                    <li class="latest-blog-list__item">
+                                        <div class="latest-blog">
+                                            <div class="latest-blog__thumb">
+                                                <a href=""><img src="assets/images/thumb/event-img-01.png" alt=""></a>
+                                            </div>
+                                            <div class="latest-blog__content">
+                                                <h6 class="latest-blog__title"> <a href="" class="latest-blog__title-link"></a></h6>
+                                                <span class="latest-blog__time"> <span class="latest-blog__time-icon"><span class="icon-calendar-6"></span></span> 22 december</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="latest-blog-list__item">
+                                        <div class="latest-blog">
+                                            <div class="latest-blog__thumb">
+                                                <a href=""><img src="assets/images/thumb/event-img-02.png" alt=""></a>
+                                            </div>
+                                            <div class="latest-blog__content">
+                                                <h6 class="latest-blog__title"> <a href="" class="latest-blog__title-link"></a></h6>
+                                                <span class="latest-blog__time"> <span class="latest-blog__time-icon"><span class="icon-calendar-6"></span></span> 22 december</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="latest-blog-list__item">
+                                        <div class="latest-blog">
+                                            <div class="latest-blog__thumb">
+                                                <a href=""><img src="assets/images/thumb/event-img-03.png" alt=""></a>
+                                            </div>
+                                            <div class="latest-blog__content">
+                                                <h6 class="latest-blog__title"> <a href="" class="latest-blog__title-link"></a></h6>
+                                                <span class="latest-blog__time"> <span class="latest-blog__time-icon"><span class="icon-calendar-6"></span></span> 22 december</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-12">
+                            <div class="sidebar">
+                                <div class="sidebar__heading">
+                                    <h4 class="sidebar__title">Popular tag</h4> 
+                                    <span class="sidebar__title-one"></span> <span class="sidebar__title-two"></span>
+                                </div>
+                                <ul class="text-list style-tag">
+                                    <li class="text-list__item"><a class="text-list__link" href="blog-details.html">Reviews</a></li>
+                                    <li class="text-list__item"><a class="text-list__link active" href="blog-details.html">radio</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="blog-details.html">Rj</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="blog-details.html">Albums</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="blog-details.html">Band</a></li>
+                                    <li class="text-list__item"><a class="text-list__link" href="blog-details.html">Grow</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== Blog Post Single End Here ==================== -->
+
+ <!-- ==================== Footer End Here ==================== -->
+ <footer class="footer-area bg-img" style="background-image: url(assets/images/thumb/footer-bid.png);">
+    <div class="container footer-top py-60">
+        <div class="row justify-content-center gy-5">
+            <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                    <div class="footer-item__logo">
+                        <a href="home"> <img src="assets/images/logo/logos.png" alt=""></a>
+                    </div>
+                    <p class="footer-item__desc">USA Based Malayalam FM Radio
+                        by RJShiby&Friends,On a Mission To Spread Smile,Joy & Positivity
+                        .</p>
+                        <ul class="social-list style-two">
+                            <li class="social-list__item"><a href="https://www.facebook.com/MalluCafeRadioUSA/" class="social-list__link"><span class="icon-facebook"></span></a> </li>
+                            <li class="social-list__item"><a href="https://www.instagram.com/mallucaferadiousa/" class="social-list__link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                              </svg></a></li>
+                            <li class="social-list__item"><a href="#" class="social-list__link"> <span class="icon-linkedin"></span></a></li>
+    
+                        </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                    <h5 class="footer-item__title">Quick Links</h5>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item"> <span class="footer-menu__item-icon"><span class="icon-next-8"></span></span> <a href="index" class="footer-menu__link">Home </a></li>
+                        <li class="footer-menu__item"> <span class="footer-menu__item-icon"><span class="icon-next-8"></span></span> <a href="about" class="footer-menu__link">About Us</a></li>
+                        <li class="footer-menu__item"> <span class="footer-menu__item-icon"><span class="icon-next-8"></span></span> <a href="show" class="footer-menu__link">Shows</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                    <h5 class="footer-item__title">Pages</h5>
+                    <ul class="footer-menu">
+
+                        <li class="footer-menu__item"> <span class="footer-menu__item-icon"><span class="icon-next-8"></span></span> <a href="event" class="footer-menu__link">Event</a></li>
+                        <li class="footer-menu__item"> <span class="footer-menu__item-icon"><span class="icon-next-8"></span></span> <a href="blog" class="footer-menu__link">Blog</a></li>
+            
+                        <li class="footer-menu__item"> <span class="footer-menu__item-icon"><span class="icon-next-8"></span></span> <a href="contact" class="footer-menu__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                    <h5 class="footer-item__title">download our apps</h5>
+                    <ul class="download-list">
+                        <li class="download-list__item">
+                            <a href="" class="download-list__link w-100">
+                                <div class="download-list__icon">
+                                    <img src="assets/images/icons/play-icon.png" alt="">
+                                </div>
+                                <div class="download-list__content">
+                                    <span class="download-list__subtitle">Available On</span>
+                                    <span class="download-list__title">Google Store</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="download-list__item">
+                            <a href="" class="download-list__link w-100">
+                                <div class="download-list__icon">
+                                    <img src="assets/images/icons/apple.png" alt="">
+                                </div>
+                                <div class="download-list__content">
+                                    <span class="download-list__subtitle">Available On</span>
+                                    <span class="download-list__title">Apple Store</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom Footer -->
+<div class="bottom-footer pb-3">
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col-md-12 text-center">
+                <div class="bottom-footer-text text-white"> Copyright © 2024 All Right Reserved.</div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+<a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+
+<script> $(window).on("load", function(){
+    $('.preloader1').fadeOut(); 
+  })</script>
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<!-- Popper js -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- nice Select js -->
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Fraudio js -->
+<script src="assets/js/fraudio.min.js"></script>
+<!-- Magnific Popup js -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

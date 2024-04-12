@@ -1,0 +1,199 @@
+
+// ====================== Section Heading ====================
+.section-heading {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 55px;
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+  &.style-two {
+    margin-left: 0;
+    text-align: left;
+    .section-heading {
+      &__bars {
+        &.bars-one {
+          display: none;
+        }
+      }
+      &__desc {
+        margin-left: 0;
+      }
+    }
+  }
+  &__bars {
+    position: relative;
+    width: 4px;
+    height: 10px;
+    background-color: $white;
+    border-radius: 30px;
+    &.bars-one {
+      left: -15px;
+    }
+    &.bars-two {
+      left: 15px;
+    }
+    &::before, &::after {
+      position: absolute;
+      content: "";
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 8px;
+      background-color: $base;
+      border-radius: 30px;
+    }
+    &::after {
+      left: -8px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  &__title {
+    text-transform: uppercase;
+    &-colored {
+      color: $base;
+    }
+  }
+  &__desc {
+    max-width: 450px;
+   margin-left: auto;
+   margin-right: auto;
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+}
+// ====================== Section Heading En d====================
+
+//================= Slick Arrow & Dots css Start ================
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: $white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .4s;
+    border: 5px solid darken($white, 80%);
+    background-color: $base;
+    color: $white;
+    font-size: 20px;
+  }
+  .slick-arrow {
+      @media (max-width: 991px) {
+      width: 70px;
+      height: 70px;
+      font-size: 16px;
+    }
+      @media (max-width: 991px) {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  .slick-arrow:hover {
+    border-color: $base;
+    background-color: darken($white, 80%);
+  }
+  .slick-next {
+    right: -40px;
+    @media (max-width: 991px) {
+      right: -20px;
+    }
+  }
+  
+  .slick-prev {
+    left: -40px;
+    @media (max-width: 991px) {
+      left: -20px;
+    }
+  }
+
+// ============================================== Margin in Slick Slider ==========================
+.margin-in-slider {
+  .slick-slide {
+    margin: 0 10px;
+  }
+}
+// ============================================== Margin in Slick Slider ==========================
+
+// ============================================== Dots ==========================
+.left-dots {
+  .slick-dots {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+// Top Right Dots Position
+.dots-right-top {
+  position: relative;
+  .slick-dots {
+      text-align: center;
+      padding-top: 20px;
+      margin: 0 -8px;
+      position: absolute;
+      top: -130px;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 767px) {
+        position: relative;
+        top: 0px;
+        justify-content: center;
+      }
+  }
+}
+// Dots Center
+.slick-dots {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 -8px;
+    
+    li {
+        display: inline-block;
+        padding: 0 8px;
+        button {
+          font-family: $heading-font;
+          font-size: 20px;
+          font-weight: 500;
+          color: transparentize($white, .4);
+          position: relative;
+          transition: .4s linear;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 0%;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%) rotate(55deg);
+            background-color: $base;
+            visibility: hidden;
+            opacity: 0;
+            transition: .4s linear;
+          }
+        }
+        &.slick-active button {
+          color:$black;
+          &::before {
+            visibility: visible;
+            opacity: 1;
+            height: 45%;
+          }
+        }
+    }
+}
+//================= Slick Arrow & Dots css Start ================
+
+
+

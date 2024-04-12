@@ -1,0 +1,96 @@
+
+
+// ---------------- Search Box -----------------
+.search-icon.close i::before {
+    content: "\f057";
+}
+.toggle-search-box {
+    position: relative;
+    order: 1;
+    @media (max-width: 991px) {
+        order: -1;
+        margin-left: auto;
+        margin-right: 16px;
+    }
+    .search-icon{
+        color: $white; 
+        display: inline-block;
+        // margin-left: 15px;
+        cursor: pointer;
+        width: 15px;
+        text-align: center;
+        &.close {
+            span::before {
+                font-family: "icomoon";
+                content: "\e94e";
+            }
+        }
+    }
+    .search-input {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 300px;
+        background-color: $base; 
+        padding: 10px;
+        border-radius: 3px;
+        margin-top: 15px;
+        transition: .3s;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9;
+        @media (max-width: 500px) {
+                right: -50px;
+        }
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 10px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            right: 4px;
+            top: -7px;
+            background-color: $base; 
+            transform: rotate(44deg);
+            @media (max-width: 500px) {
+                right: 50px;
+        }
+            
+        }
+        form{
+            position: relative;
+            input{
+                padding: 10px 35px 10px 10px;
+                border: 0;
+                width: 100% ;
+                border-radius: 5px;
+                color: $dark;
+                font-weight: 400;
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+                &::placeholder {
+                    // color: $base-two; 
+                    font-weight: 400;
+                }
+            }
+            button {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: none;
+                background-color: transparent;
+                color: $white; 
+                font-weight: 500;
+                border-radius: 0px 5px 5px 0px;
+                color: $base; 
+            }
+        } 
+    }
+}

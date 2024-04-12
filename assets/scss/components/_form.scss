@@ -1,0 +1,215 @@
+
+// Bootstrap Input Group
+.input-group-text {
+    display: unset;
+    padding: 0;
+    font-size: 0;
+    font-weight: unset;
+    line-height: unset;
+    color: unset;
+    text-align: unset;
+    white-space: unset;
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+}
+
+// ================== Custom Form Control Start ================
+.form--label {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: $light !important;
+    font-weight: 400;
+}
+
+.form--control {
+    height: 60px;
+    border-radius: 3px;
+    color: $dark;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    padding: 0px 15px;
+    background-color: transparentize($white, .96); 
+    border: 1px solid transparentize($white, .94);
+    color: $white; 
+    &::placeholder {
+        color: transparentize($white, .4);
+        font-size: 14px;
+    }
+    &:focus {
+        border: 1px solid $border-color;
+        border-radius: 3px;
+        background-color: transparentize($white, .97); 
+        color: $white; 
+    }
+    &:focus {
+        box-shadow: none;
+        border-color: $base; 
+    }
+    &:disabled, &[readonly] {
+        background-color: darken( $base-two, 7%); 
+        opacity: 1;
+        border: 0;
+    }
+    &[type="file"] {
+        line-height: 48px;
+        padding: 0 10px;
+        &::-webkit-file-upload-button {
+            background-color: $base-two !important;
+            color: $white !important;
+          }
+    }
+}
+textarea.form--control {
+    height: 150px;
+    padding: 15px;
+}
+// input gruop
+.input--group {
+    position: relative;
+}
+.input--icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $base;
+}
+// Show Hide Password
+.password-show-hide {
+    position: absolute;
+    right: 20px;
+    z-index: 3;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparentize($white, .7);
+}
+
+
+// --------------- Number Arrow None ---------------------
+input#send-amount::-webkit-outer-spin-button,
+input#send-amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input#send-amount[type=number]{
+    -moz-appearance: textfield;
+}
+
+
+// ============== Select here ==================
+.custom--select {
+    position: relative;
+    &.style-two {
+        .icon {
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+            background-color: $light;
+            height: 80%;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            -ms-flex-align: center;
+            align-items: center;
+            color: $white; 
+            i {
+                margin-left: 10px;
+                margin-top: -10px;
+            }
+        }
+        .form--select {
+            border: 1px solid $border-color;
+            &:focus {
+                // border: 1px solid #13DA5A;
+                border-radius: 3px;
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+    .icon {
+        position: absolute;
+        right: 15px;
+        top: 45%;
+        transform: translateY(-50%);
+        font-size: 15px;
+        z-index: 3;
+    } 
+}
+.form--select {
+    height: 50px;
+    position: relative;
+    padding-left: 10px;
+    background-color: transparentize($body-background, .6);
+    border: 1px solid $border-color;
+    color: $light; ;
+    background-image: none;
+    &.style-two {
+        padding-left: 60px;
+    }
+    &:focus {
+        background-color: transparentize($body-background, .4);
+        box-shadow: none;
+    }
+}
+
+.input-group--text {
+    background: $base; 
+    color: $white; 
+    border-radius: 0;
+    margin-right: 5px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    border: transparent !important;
+    z-index: 5;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+
+// Checkbox Design
+.custom--checkbox {
+    &__check {
+        opacity: 0;
+        display: none;
+        &:checked ~ label::before {
+            background-color: $base; 
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00c";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 10px;
+          }
+      }
+      &__text {
+        position: relative;
+        padding-left: 25px;
+        font-size: 16px;
+        color: $white;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            border: 1px solid $base; 
+            left: 0;
+            border-radius: 2px;
+            top: 3px;
+          }
+      }
+}
+// ----------------------------- Calander Icon --------------
+::-webkit-calendar-picker-indicator {
+    filter: invert(.5);
+  }
+  ::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+  }

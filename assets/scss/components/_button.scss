@@ -1,0 +1,201 @@
+button {
+    border: none;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+// Custom Button
+.btn {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    &--base {
+        color: $white;
+        font-weight: 500;
+        background-color: lighten($base-two, 2%);
+        padding: 13px 30px;
+        border-radius: 4px;
+        position: relative;
+        z-index: 1;
+        border: none;
+        text-align: center;
+        font-size: 20px;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        transition: .2s linear;
+        @media (max-width: 767px) {
+            padding: 10px 25px;
+        }
+        @media (max-width: 575px) {
+            padding: 10px 20px;
+        }
+        &.style-two {
+            background-color: $base;
+            border: 1px solid transparent;
+            color: $white;
+            border-radius: 4px;
+            &:hover {
+                background-color: transparent;
+                border: 1px solid $white;
+            }
+        }
+        &.outline {
+            background-color: transparent;
+            border: 1px solid $white;
+            &:hover {
+                background-color: $base;
+                border-color: $base;
+            }
+        }
+        &.header__style-two {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            border-radius: 0px;
+            background-color: $base;
+            &:hover {
+                background-color: lighten($base-two, 3%);
+            }
+        }
+        &__icon {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        &:hover {
+            color: $white;
+            background-color: $base;
+        }
+        &:hover::before {
+            height: 100%;
+        }
+    }
+    // ================ Button Simiple ================
+    &--simple {
+        font-size: 16px;
+        font-family: $heading-font;
+        color: $white;
+        font-weight: 500;
+        position: relative;
+        &.style-two {
+            color: $base;
+            &::before, &::after {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 1px;
+                left: 130%;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $white;
+                transition: .2s linear;
+            } 
+            &::after {
+                left: -100%;
+            }
+            &:hover::after {
+                left: -78%;
+            }
+        }
+        &:hover::before {
+            left: 105%;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 1px;
+            left: 130%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $base;
+            transition: .2s linear;
+        }
+    }
+    // ============== Blog Post Button =============
+    &--blog {
+        color: $base;
+        position: relative;
+        &:hover {
+            color: $white;
+            &::before {
+                background-color: $white;
+            }
+            &::after {
+                background-color: $base;
+            }
+        }
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 10px;
+            right: -10px; 
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $base;
+            transition: .2s linear;
+        }
+        &::after {
+            right: -15px;
+            background-color: $white;
+        }
+    }
+
+    &--primary {
+        background-color: $primary;
+        color: $white;
+        &:hover {
+            color: $white;
+            background-color: #6457f3;
+        }
+    }
+    &--secondary {
+        background-color: $secondary;
+        color: $white;
+        &:hover {
+            color: $white;
+            background-color: #636c75;
+        }
+    }
+    &--success {
+        background-color: $success;
+        color: $white;
+        &:hover {
+            color: $white;
+            background-color: #13af59;
+        }
+    }
+    &--danger {
+        background-color: $danger;
+        color: $white;
+        &:hover {
+            color: $white;
+            background-color: #ad2b2b;
+        }
+    }
+    &--warning {
+        background-color: $warning;
+        color: $white;
+        &:hover {
+            color: $white;
+            background-color: #d47c29;
+        }
+    }
+    &--info {
+        background-color: $info;
+        color: $white;
+        &:hover {
+            background-color: #0e7bbe;
+            color: $white;
+        }
+    }
+}
+
+
+
+
+
+
+
